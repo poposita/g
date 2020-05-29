@@ -42,7 +42,7 @@ module.exports = Object.seal({
 "serverWsModule": "ws",
 "serverMaxConnections": 500,
 "serverPort": 8080,
-"serverBind": "",
+"serverBind": "localhost",
 "serverTracker": 0,
 "serverGamemode": 0,
 "serverBots": 0,
@@ -176,8 +176,8 @@ module.exports = Object.seal({
 // serverMinions: Amount of minions each player gets once they spawn
 // defaultName: Default name for all minions if name is not specified using command (put <r> before the name for random skins!)
 // minionsOnLeaderboard: Whether or not to show minions on the leaderboard. (Set 0 to disable)
-"minionStartSize": 31.6227766017,
-"minionMaxStartSize": 31.6227766017,
+"minionStartSize": 61.6227766017,
+"minionMaxStartSize": 61.6227766017,
 "minionCollideTeam": 0,
 "disableERTP": 1,
 "disableQ": 0,
