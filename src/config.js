@@ -129,8 +129,8 @@ module.exports = Object.seal({
 // ejectSpawnPercent: Chance for a player to spawn from ejected mass. 0.5: 50% (set to 0 to disable)
 // ejectVirus: Whether or not players can eject viruses instead of mass
 // ejectVelocity: Velocity of ejecting cells (speed and distance)
-"ejectSize": 36.06,
-"ejectSizeLoss": 42.43,
+"ejectSize": 34,
+"ejectSizeLoss": 34,
 "ejectCooldown": 3,
 "ejectSpawnPercent": 0.5,
 "ejectVirus": 0,
