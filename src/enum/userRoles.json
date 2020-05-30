@@ -1,13 +1,13 @@
 [
     {
-        "ip":"187.195.198.83",
+        "ip":"127.0.0.1",
         "password":"putoputo",
         "role":"ADMIN",
         "name":"Local Administrator"
     },
     {
         "ip":"127.0.0.1",
-        "password":"moder",
+        "password":"caca",
         "role":"MODER",
         "name":"Local Moderator"
     },
