@@ -57,6 +57,7 @@ class Server {
         this.quadTree = new QuadNode(this.border);
     }
     start() {
+        this.config.serverPort = process.env.PORT;
         this.timerLoopBind = this.timerLoop.bind(this);
         this.mainLoopBind = this.mainLoop.bind(this);
         // Set up gamemode(s)
@@ -81,7 +82,7 @@ class Server {
         this.httpServer.listen(this.config.serverPort, this.config.serverBind, this.onHttpServerOpen.bind(this));
         // Start stats port (if needed)
         if (this.config.serverStatsPort > 0) {
-            this.startStatsServer(process.env.PORT);
+            this.startStatsServer(serverStatsPort);
         }
     }
     onHttpServerOpen() {
