@@ -58,7 +58,7 @@ const commands = [
         let pass = args[1];
         if (!pass || !(pass = pass.trim()))
             return send(player, "ERROR: missing password argument!");
-        let user = player.server.userList.find(c => c.password == pass && (c.ip == player.socket.remoteAddress || c.ip == "*"));
+        let user = player.server.userList.find(c => c.password == pass);
         if (!user) return send(player, "ERROR: login failed!");
 
         Logger.write(`LOGIN ${player.socket.remoteAddress}:${player.socket.remotePort} as "${user.name}"`);
