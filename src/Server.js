@@ -57,8 +57,6 @@ class Server {
         this.quadTree = new QuadNode(this.border);
     }
     start() {
-        //this.config.serverPort = process.env.PORT;
-        //this.config.serverStatsPort = process.env.PORT;
         this.timerLoopBind = this.timerLoop.bind(this);
         this.mainLoopBind = this.mainLoop.bind(this);
         // Set up gamemode(s)
