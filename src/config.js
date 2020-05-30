@@ -50,7 +50,7 @@ module.exports = Object.seal({
 "serverViewBaseY": 1080,
 "serverMinScale": 0.15,
 "serverSpectatorScale": 0.4,
-"serverStatsPort": 88,
+"serverStatsPort": 3000,
 "serverStatsUpdate": 60,
 "mobilePhysics": 0,
 "badWordFilter": 1,
