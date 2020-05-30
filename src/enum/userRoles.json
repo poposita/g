@@ -1,18 +1,18 @@
 [
     {
-        "ip":"127.0.0.1",
+        "ip":"erwerq.herokuapp.com",
         "password":"putoputo",
         "role":"ADMIN",
         "name":"Local Administrator"
     },
     {
-        "ip":"127.0.0.1",
+        "ip":"erwerq.herokuapp.com",
         "password":"caca",
         "role":"MODER",
         "name":"Local Moderator"
     },
     {
-        "ip":"127.0.0.1",
+        "ip":"erwerq.herokuapp.com",
         "password":"user",
         "role":"USER",
         "name":"Local User"
