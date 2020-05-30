@@ -68,8 +68,8 @@ module.exports = Object.seal({
 "serverChat": 1,
 "serverChatAscii": 1,
 "separateChatForTeams": 0,
-"serverName": "MultiOgarII #1",
-"serverWelcome1": "Welcome to MultiOgarII!",
+"serverName": "Clan ks",
+"serverWelcome1": "keiler es gei xd",
 "serverWelcome2": "",
 "clientBind": "",
 
@@ -98,7 +98,7 @@ module.exports = Object.seal({
 // foodAmount: The number of food to spawn
 // foodMassGrow: Enable food mass grow ?
 "foodMinSize": 10,
-"foodMaxSize": 20,
+"foodMaxSize": 15,
 "foodAmount": 700,
 "foodMassGrow": 1,
 
@@ -131,7 +131,7 @@ module.exports = Object.seal({
 // ejectVelocity: Velocity of ejecting cells (speed and distance)
 "ejectSize": 34,
 "ejectSizeLoss": 34,
-"ejectCooldown": 3,
+"ejectCooldown": 0,
 "ejectSpawnPercent": 0.5,
 "ejectVirus": 0,
 "ejectVelocity": 780,
