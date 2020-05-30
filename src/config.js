@@ -42,7 +42,7 @@ module.exports = Object.seal({
 "serverWsModule": "ws",
 "serverMaxConnections": 500,
 "serverPort": 8080,
-"serverBind": "erwerq.herokuapp.com",
+"serverBind": "",
 "serverTracker": 0,
 "serverGamemode": 0,
 "serverBots": 40,
