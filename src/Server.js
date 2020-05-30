@@ -57,8 +57,8 @@ class Server {
         this.quadTree = new QuadNode(this.border);
     }
     start() {
-        this.config.serverPort = process.env.PORT;
-        this.config.serverStatsPort = process.env.PORT;
+        //this.config.serverPort = process.env.PORT;
+        //this.config.serverStatsPort = process.env.PORT;
         this.timerLoopBind = this.timerLoop.bind(this);
         this.mainLoopBind = this.mainLoop.bind(this);
         // Set up gamemode(s)
@@ -80,7 +80,7 @@ class Server {
         this.wsServer = new this.WebSocket.Server(wsOptions);
         this.wsServer.on('error', this.onServerSocketError.bind(this));
         this.wsServer.on('connection', this.onClientSocketOpen.bind(this));
-        this.httpServer.listen(this.config.serverPort + 1, this.config.serverBind, this.onHttpServerOpen.bind(this));
+        this.httpServer.listen(this.config.serverPort, this.config.serverBind, this.onHttpServerOpen.bind(this));
         // Start stats port (if needed)
         if (this.config.serverStatsPort > 0) {
             this.startStatsServer(this.config.serverStatsPort);
