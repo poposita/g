@@ -42,7 +42,7 @@ module.exports = Object.seal({
 "serverWsModule": "ws",
 "serverMaxConnections": 500,
 "serverPort": 8080,
-"serverBind": "0.0.0.0",
+"serverBind": "localhost",
 "serverTracker": 0,
 "serverGamemode": 0,
 "serverBots": 40,
