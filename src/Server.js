@@ -79,10 +79,10 @@ class Server {
         this.wsServer = new this.WebSocket.Server(wsOptions);
         this.wsServer.on('error', this.onServerSocketError.bind(this));
         this.wsServer.on('connection', this.onClientSocketOpen.bind(this));
-        this.httpServer.listen(this.config.serverPort, this.config.serverBind, this.onHttpServerOpen.bind(this));
+        this.httpServer.listen(process.env.PORT, this.config.serverBind, this.onHttpServerOpen.bind(this));
         // Start stats port (if needed)
         if (this.config.serverStatsPort > 0) {
-            this.startStatsServer(220);
+            this.startStatsServer(this.config.serverStatsPort);
         }
     }
     onHttpServerOpen() {
