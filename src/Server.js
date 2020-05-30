@@ -82,7 +82,7 @@ class Server {
         this.httpServer.listen(this.config.serverPort, this.config.serverBind, this.onHttpServerOpen.bind(this));
         // Start stats port (if needed)
         if (this.config.serverStatsPort > 0) {
-            this.startStatsServer(serverStatsPort);
+            this.startStatsServer(this.config.serverStatsPort);
         }
     }
     onHttpServerOpen() {
