@@ -124,7 +124,7 @@ class Server {
                 Logger.error("Please make sure you are running MultiOgarII with root privileges.");
                 break;
         }
-        //process.exit(1); // Exits the program
+        process.exit(1); // Exits the program
     }
     onClientSocketOpen(ws, req) {
         var req = req || ws.upgradeReq;
